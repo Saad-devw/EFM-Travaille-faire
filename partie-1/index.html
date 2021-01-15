@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <title>QUIZ || APP</title>
+</head>
+<body>
+  
+    <div class="container">
+      <div class="donne">
+          <h2>Vos Données</h2>
+
+          <p>Cliquez sur le Bouton "Aléatoire" pour tirer deux nombres entre 0 et 100.</p>
+
+        
+    <!--------------- Inserez des Données ----------------->
+          
+          <label for="val-A">A = </label>
+          <input type="text" id="val-A">
+          <label for="val-B">B = </label>
+          <input type="text" id="val-B">
+
+          <button id="generate" onclick="Alea();">Aléatoire</button>
+      </div>
+    <!-------------------- Answers ------------------------>
+      <div class="sol">
+        <h2>Votre solution</h2>
+        <div class="answer">
+
+          <table>
+            <tr>
+              <td class="col-rg">A + B </td>
+              <td><input type="text" maxlength="8" id="sum"></td>
+            </tr>
+            <tr>
+              <td class="col-rg">A - B</td>
+              <td><input type="text" maxlength="8" id="sub"></td>
+            </tr>
+            <tr>
+              <td class="col-rg">A * B</td>
+              <td><input type="text" maxlength="8" id="mult"></td>
+            </tr>
+            <tr>
+              <td class="col-rg">A / B</td>
+              <td><input type="text" maxlength="8" id="divi"></td>
+            </tr>
+            <tr >
+              <td colspan="2"> <button id="verify" onclick="Verifier();">Vérifier</button> </td>
+            </tr>
+          </table>
+
+          
+        </div>
+      </div>
+      
+      <div class="corr">
+        <h2>La correction</h2>
+        
+            <label >A + B = </label>
+            <input type="text" id="sum-res" readonly maxlength="10">
+            
+            <label >A - B = </label>
+            <input type="text" id="sub-res" readonly maxlength="10">
+            
+            
+
+            <label >A * B = </label>
+            <input type="text" id="mult-res" readonly maxlength="10">
+            
+            <label >A / B = </label>
+            <input type="text" id="divi-res" readonly maxlength="10">
+
+            
+
+            <button id="clear" onclick="Solution();">OK</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

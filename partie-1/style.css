@@ -1,0 +1,90 @@
+
+/*********************** Style  Demandé *******************/
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #A7EDDF;
+}
+
+.answer table{
+  border: 6px solid black;
+  border-style: groove;
+  border-collapse: collapse;
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+}
+
+td{
+  width: 100px;
+}
+
+.col-rg{
+  color: red;
+}
+
+.sum-res , .sub-res , .mult-res , .divi-res{
+  text-align: right;
+}
+
+/********************* Style Optionnel ************************/
+
+h2{
+  font-family: fantasy;
+  letter-spacing: 2px;
+  text-decoration: overline;
+  margin-bottom: 10px;
+  color: blueviolet;
+}
+
+p{
+  font-family: monospace;
+  font-size: 14pt;
+  margin-bottom: 10px;
+}
+
+input{
+  
+  margin-bottom: 10px;
+  outline: none;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+button{
+  padding: 5px;
+  border-radius: 10px;
+  outline: none;
+  background-color: aquamarine;
+  font-family: fantasy;
+  width: 80px;
+}
+
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: auto;
+  background: linear-gradient(120deg,grey,white,rgb(175, 144, 224));
+  box-shadow: 12px 25px 10px 10px gray;
+             
+}
+
+.donne , .sol{
+  margin-bottom: 20px;
+}
+
+.donne , .sol , .corr{
+  padding: 10px;
+}
+
+.answer input{
+  width: 80%;
+}
+
+#verify{
+ margin-top: 20px;
+}
